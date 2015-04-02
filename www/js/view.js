@@ -313,6 +313,12 @@ var app = function(app) {
 			.to({x:560},100)
 			.to({x:580},100)
 			.to({x:560},100)
+
+			createjs.Tween.get(bodyShapes)
+			.to({x:360},100)
+			.to({x:350},100)
+			.to({x:360},100)
+			.to({x:350},100)
 		});
 		
 		arm.on("click", function() {
@@ -583,10 +589,7 @@ var app = function(app) {
 
 		});
 
-		//bodyShapes.on("click", function(){
-			//createjs.Tween.get(bodyShapes)
-			//.to({x:})
-		//});
+		
 
 		bodyDot.on("click", function() {
 
