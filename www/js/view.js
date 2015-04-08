@@ -705,6 +705,16 @@ var app = function(app) {
 				.to({y:383},200)
 		});
 
+		makeTitle("Do Not Click The Robot!");
+		function makeTitle(t){
+			var title=new createjs.Text(t, "40px Verdana","#000000");
+			title.textBaseline = "alphabetic";
+			title.x = 150;
+			title.y = 300;
+			p.main.addChild(title);
+			stage.update();
+		}
+
 		
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
@@ -716,14 +726,14 @@ var app = function(app) {
 
 		//p.info.text = function(){
 		console.log("Hi from text");
-		makeTitle("Robot X:");
-		function makeTitle(t) {
-			var title = new createjs.Text(t, "50px Verdana", "#000000");		
-			title.textBaseline = "alphabetic";
-			title.alpha = .9;
-			title.x = 50; 
-			title.y = 300;	
-			p.info.addChild(title);
+		makeTitle1("Robot X:");
+		function makeTitle1(t) {
+			var title1 = new createjs.Text(t, "50px Verdana", "#000000");		
+			title1.textBaseline = "alphabetic";
+			title1.alpha = .9;
+			title1.x = 50; 
+			title1.y = 300;	
+			p.info.addChild(title1);
 			stage.update();
 		}	
 
@@ -741,6 +751,7 @@ var app = function(app) {
 		
 		stage.update();	
 		//}
+
 
 				
 		return p;
